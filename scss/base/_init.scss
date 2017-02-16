@@ -1,5 +1,67 @@
 @import "../../zurb_foundation/scss/foundation/functions";
 
-body{
-    color: blue;
+//Skrivet av Sven Ängermark Monoclick Solutiosn 2017 sven@monoclick.se
+
+//Mobil navigering
+
+#mobilmeny {
+    background: rgba(49, 49, 49, 0.9) none repeat;
+    height: 100%;
+    opacity: 0;
+    overflow-y: auto;
+    position: fixed;
+    transition: all 0.2s ease-in-out 0s;
+    width: 100%;
+    z-index: -1;
+}
+#mobilmeny.open {
+    opacity: 1;
+    pointer-events: all;
+    z-index: 1000;
+}
+.mobile-nav-trigger .line {
+    background: #3f3f3f;
+    display: block;
+    height: 5px;
+    /*margin-bottom: 3px;*/
+    /*left: 50%;*/
+    /*opacity: 1;*/
+    position: absolute;
+    /*transform: rotate(0deg) translateX(-50%);*/
+    /*width: 100%;*/
+    width: 30px;
+    left: auto;
+    right: 0;
+}
+.mobile-nav-trigger .line:nth-child(1) {
+    top: 0;
+}
+.mobile-nav-trigger .line:nth-child(2){
+    top: 8px;
+}
+.mobile-nav-trigger .line:nth-child(3) {
+    top: 16px;
+}
+.mobile-nav-trigger .line-wrapper {
+    display: block;
+    height: 21px;
+//    margin-top: 14.5px;
+    position: relative;
+}
+.mobile-nav-trigger .line-wrapper .title{
+    color: #4b4b4b;
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    height: 21px;
+    left:0;
+    line-height: 22px;
+    text-transform: uppercase;
+    width: auto;
+}
+.header-inner{
+    background-color: azure;
+}
+.l-header-region{
+    background-color: gray;
 }

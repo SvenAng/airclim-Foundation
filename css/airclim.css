@@ -23,9 +23,84 @@
  * - https://drupal.org/node/1887922
  * - http://smacss.com/
  */
-/* line 3, ../scss/base/_init.scss */
-body {
-  color: blue;
+/* line 7, ../scss/base/_init.scss */
+#mobilmeny {
+  background: rgba(49, 49, 49, 0.9) none repeat;
+  height: 100%;
+  opacity: 0;
+  overflow-y: auto;
+  position: fixed;
+  transition: all 0.2s ease-in-out 0s;
+  width: 100%;
+  z-index: -1;
+}
+
+/* line 17, ../scss/base/_init.scss */
+#mobilmeny.open {
+  opacity: 1;
+  pointer-events: all;
+  z-index: 1000;
+}
+
+/* line 22, ../scss/base/_init.scss */
+.mobile-nav-trigger .line {
+  background: #3f3f3f;
+  display: block;
+  height: 5px;
+  /*margin-bottom: 3px;*/
+  /*left: 50%;*/
+  /*opacity: 1;*/
+  position: absolute;
+  /*transform: rotate(0deg) translateX(-50%);*/
+  /*width: 100%;*/
+  width: 30px;
+  left: auto;
+  right: 0;
+}
+
+/* line 36, ../scss/base/_init.scss */
+.mobile-nav-trigger .line:nth-child(1) {
+  top: 0;
+}
+
+/* line 39, ../scss/base/_init.scss */
+.mobile-nav-trigger .line:nth-child(2) {
+  top: 8px;
+}
+
+/* line 42, ../scss/base/_init.scss */
+.mobile-nav-trigger .line:nth-child(3) {
+  top: 16px;
+}
+
+/* line 45, ../scss/base/_init.scss */
+.mobile-nav-trigger .line-wrapper {
+  display: block;
+  height: 21px;
+  position: relative;
+}
+
+/* line 51, ../scss/base/_init.scss */
+.mobile-nav-trigger .line-wrapper .title {
+  color: #4b4b4b;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  height: 21px;
+  left: 0;
+  line-height: 22px;
+  text-transform: uppercase;
+  width: auto;
+}
+
+/* line 62, ../scss/base/_init.scss */
+.header-inner {
+  background-color: azure;
+}
+
+/* line 65, ../scss/base/_init.scss */
+.l-header-region {
+  background-color: gray;
 }
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
