@@ -68,6 +68,7 @@
     (function ($, Drupal, window, document, undefined) {
       $(document).foundation();
     })(jQuery, Drupal, this, this.document);
+      
   </script>
 </body>
 </html>

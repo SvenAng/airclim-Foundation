@@ -1,9 +1,21 @@
 jQuery(document).ready(function () {
-    //alert("hej");  
-    jQuery("#menu-close").click(function () {
-        jQuery('#mobilmeny').removeClass('open');
+    jQuery("#nav-toggle").click(function(){
+        jQuery("#mobilmeny").fadeToggle("fast");
+        this.classList.toggle("active");
     });
-    jQuery(".mobile-nav-trigger").click(function () {
-        jQuery('#mobilmeny').addClass('open');
+    
+    
+    $('.off-canvas-submenu .off-canvas-submenu').hide();
+    $('.off-canvas-nav .nolink').hide();
+    $('.off-canvas-nav .nolink').next('span').hide();
+    $('.off-canvas-submenu .active-trail .off-canvas-submenu').show();
+    $('.off-canvas-submenu .active-trail span').text('-');
+
+    $('.open-sub').click(function() {
+        $(this).next('.off-canvas-submenu .off-canvas-submenu').slideToggle();
+        var $thx = $(this);
+        $thx.text($thx.text() == '+' ? '-' : '+');
     });
+    
+    
 });

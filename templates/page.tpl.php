@@ -4,14 +4,18 @@
 
     <!--.l-header -->
     <header role="banner" class="l-header">
-        <div class="header-inner">
-            <!-- Mobil-->
-            <div id="mobilmeny" class="">
-                <a class="icon-cancel" id="menu-close" href="#close">X</a>
-                <?php print render($page['mobilmeny']); ?>
-            </div>
-            <!-- end Mobil-->
-            <div class="column large-8">
+        
+        <!-- Mobil-->
+        <div id="mobilmeny" class="">
+            <?php print render($page['mobilmeny']); ?>
+        </div>
+        <!-- end Mobil-->
+        
+        
+        
+        <div class="header-inner row">
+            
+            <div class="column small-9 medium-7">
                 <!-- Title, slogan and menu -->
                 <?php if ($alt_header): ?>
                 <section class="row <?php print $alt_header_classes; ?>">
@@ -20,30 +24,33 @@
                 <?php endif; ?>
                 <!-- End title, slogan and menu -->
             </div>    
-            <div class="column large-4">
+            <div class="column medium-5 show-for-medium-up">
                 <nav class="top-meny">
                     <?php print render($page['top_meny']); ?>
                 </nav>
 
-                <div class="columns">
+                <div class="top-search">
                     <?php print render($page['top_search']); ?>
                 </div>
             </div>
             
-            <div class="m-btn">
+            <div class="m-btn column small-3 show-for-small-only">
+                <a id="nav-toggle" href="#"><span></span></a>
+<!--            
                 <a href="#" class="mobile-nav-trigger">
                     <span class="line-wrapper">
                         <span class="line"></span>
                         <span class="line"></span>
                         <span class="line"></span>
-                        <span class="title">MENY</span>
+                        
                     </span>
                 </a>
+-->
             </div>
             
         </div>
         
-        <section class="l-header-region">
+        <section class="l-header-region show-for-medium-up">
             <div class="header-region-inner row">
                 <div class="columns">
                     <?php print render($page['header']); ?>

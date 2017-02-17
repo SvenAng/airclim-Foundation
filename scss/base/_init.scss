@@ -1,4 +1,4 @@
-@import "../../zurb_foundation/scss/foundation/functions";
+//@import "../../zurb_foundation/scss/foundation/functions";
 
 //Skrivet av Sven Ängermark Monoclick Solutiosn 2017 sven@monoclick.se
 
@@ -7,61 +7,313 @@
 #mobilmeny {
     background: rgba(49, 49, 49, 0.9) none repeat;
     height: 100%;
-    opacity: 0;
+//    opacity: 0;
     overflow-y: auto;
     position: fixed;
     transition: all 0.2s ease-in-out 0s;
     width: 100%;
-    z-index: -1;
-}
-#mobilmeny.open {
-    opacity: 1;
-    pointer-events: all;
+//    z-index: -1;
+    top: 100px;
     z-index: 1000;
+    display: none;
 }
-.mobile-nav-trigger .line {
-    background: #3f3f3f;
+//#mobilmeny.open {
+//    opacity: 1;
+//    pointer-events: all;
+//    z-index: 1000;
+//}
+
+//new
+#nav-toggle { 
+//    position: absolute; 
+//    left: 50%; 
+//    top: 50%;
+    margin-top: 1rem;
+//    margin-right: 2rem;
     display: block;
-    height: 5px;
-    /*margin-bottom: 3px;*/
-    /*left: 50%;*/
-    /*opacity: 1;*/
-    position: absolute;
-    /*transform: rotate(0deg) translateX(-50%);*/
-    /*width: 100%;*/
-    width: 30px;
-    left: auto;
-    right: 0;
 }
-.mobile-nav-trigger .line:nth-child(1) {
+
+#nav-toggle { 
+    cursor: pointer; 
+    padding: 10px 35px 16px 0px; 
+//    margin-right: 1rem;
+}
+#nav-toggle span, 
+#nav-toggle span:before, 
+#nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 4px;
+    width: 35px;
+    background: black;
+    position: absolute;
+    display: block;
+    content: '';
+//    right: 1rem;
+}
+#nav-toggle span:before {
+    top: -10px; 
+}
+#nav-toggle span:after {
+    bottom: -10px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    transition: all 300ms ease-in-out;
+}
+#nav-toggle.active span {
+    background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
     top: 0;
 }
-.mobile-nav-trigger .line:nth-child(2){
-    top: 8px;
+#nav-toggle.active span:before {
+    transform: rotate(45deg);
 }
-.mobile-nav-trigger .line:nth-child(3) {
-    top: 16px;
+#nav-toggle.active span:after {
+    transform: rotate(-45deg);
 }
-.mobile-nav-trigger .line-wrapper {
-    display: block;
-    height: 21px;
-//    margin-top: 14.5px;
+
+
+//old
+//.mobile-nav-trigger .line {
+//    background: #3f3f3f;
+//    display: block;
+//    height: 5px;
+//    position: absolute;
+//    /*transform: rotate(0deg) translateX(-50%);*/
+//    width: 30px;
+//    left: auto;
+//    right: 0;
+//}
+//.mobile-nav-trigger .line:nth-child(1) {
+//    top: 0;
+//}
+//.mobile-nav-trigger .line:nth-child(2){
+//    top: 8px;
+//}
+//.mobile-nav-trigger .line:nth-child(3) {
+//    top: 16px;
+//}
+//.mobile-nav-trigger .line-wrapper {
+//    display: block;
+//    height: 21px;
+//    position: relative;
+//}
+//.mobile-nav-trigger .line-wrapper .title{
+//    color: #4b4b4b;
+//    display: block;
+//    font-size: 14px;
+//    font-weight: 600;
+//    height: 21px;
+//    left:0;
+//    line-height: 22px;
+//    text-transform: uppercase;
+//    width: auto;
+//}
+
+.l-main, .l-triptych, .l-footer-columns {
+    background: white;
+}
+.l-main{
+    padding-top: 1rem;
+}
+
+.l-header{
+    background-color: white;
+}
+
+
+//Topmeny\
+.top-meny{
     position: relative;
-}
-.mobile-nav-trigger .line-wrapper .title{
-    color: #4b4b4b;
+    height: 2rem;
     display: block;
-    font-size: 14px;
-    font-weight: 600;
-    height: 21px;
-    left:0;
-    line-height: 22px;
-    text-transform: uppercase;
-    width: auto;
 }
+.top-meny .menu{
+    position: absolute;
+    right: 0;
+    
+}
+//Button override
+.top-search .container-inline{
+    width: 80%;
+    float: right;
+}
+.top-search .postfix.button{
+    margin-left: 1.5rem;
+    height: 1.6rem;
+    line-height: 1rem;
+    width: 5rem;
+    border-radius: 3px;
+    
+}
+input[type="text"]{
+    height: 1.7rem;
+    font-size: 0.8rem;
+    padding: 3px;
+}
+
+.top-meny li{
+    display: inline-block;
+//    text-align: right;
+    padding-left: 0.6rem;
+}
+.top-meny li a{
+    font-size: 0.8rem;   
+}
+//Top grejer
 .header-inner{
-    background-color: azure;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
+
+/*===== Superfish ======*/
 .l-header-region{
-    background-color: gray;
+    background-color:$primary-color;
 }
+.block-superfish-1 h2{
+    display: none;
+}
+.block-superfish-1 .sf-menu.sf-style-default{
+    margin-bottom: 0;
+}
+.block-superfish-1 {
+    background: #ffffff url("../images/top-menu-bakgrund.png") repeat-x scroll 0 0;
+}
+.block-superfish-1 .sf-menu.sf-style-default li, 
+.block-superfish-1 .sf-menu.sf-style-default.sf-navbar{
+    background: none;
+}
+.block-superfish-1 ul.menu li:hover a{
+    background-color: $oil;
+    color: #fff;
+}
+.block-superfish-1 ul.menu li.active-trail{
+    background-color: $oil;
+
+}
+.block-superfish-1 ul.menu li.active-trail a{
+//    color: $warning-color; 
+}
+.block-superfish-1 ul.menu li{
+    border-left: $topnavigation-border 1px solid;
+}
+.block-superfish-1 ul.menu li a{
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*level 2*/
+.sf-menu.sf-horizontal.sf-shadow ul, 
+.sf-menu.sf-vertical.sf-shadow ul,
+.sf-menu.sf-navbar.sf-shadow ul ul {
+    background: $oil; 
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border: none;
+    padding: 0 8px 9px 0 !important;
+    box-shadow: 0 10px 10px #bebebe;
+}
+.sf-menu li:hover > ul,
+.sf-menu li.sfHover > ul {
+    left: 0;
+    top: 1.9rem;
+}
+.block-superfish-1 ul.menu li ul li.sf-depth-2{
+    margin-top: 17px;
+}
+.block-superfish-1 ul.menu li ul li.sf-depth-2.last{
+    margin-bottom: 17px;
+}
+.block-superfish-1 ul.menu li ul li.sf-depth-2 a{
+    color: #fff;
+    line-height: 16px;
+}
+.block-superfish-1 ul.menu li ul li.sf-depth-2 a.active{
+    color: $warning-color;
+}
+
+.block-superfish-1 .sf-menu.sf-style-default a, 
+.block-superfish-1 .sf-menu.sf-style-default a:visited, 
+.block-superfish-1 .sf-menu.sf-style-default span.nolink {
+    border-left: none;
+    border-top: none;
+}
+
+
+//Sidomenyer
+aside .block-title{
+    border-bottom: 1px solid $steel;
+    font-family: $font-family-sans-serif;
+    font-size: 0.8rem;
+    color: $steel;
+}
+aside .menu{
+    
+}
+aside .menu{
+    margin-left: 0.75rem;
+}
+aside .menu li{
+    list-style-type: none;
+    list-style-image: url("../images/arrow-head.png");
+    
+}
+aside .menu li a{
+    line-height: 1.6rem;
+    color: $charcoal;
+}
+aside .menu li a.active-trail{
+    color: $warning-color;
+}
+aside .menu li a:hover{
+    color: $warning-color;
+}
+
+//Mobilmeny\
+#mobilmeny .menu{
+
+}
+#mobilmeny .menu{
+//    margin-left: 0.75rem;
+}
+#mobilmeny .menu li{
+    list-style-type: none;
+//    list-style-image: url("../images/arrow-head.png");
+    display: block;
+    width: 100%;
+}
+#mobilmeny .menu li a{
+    line-height: 2.3rem;
+    color: $silver;
+//    display: block;
+//    width: 100%;
+    font-size: 1.2rem;
+//    text-align: center;
+//    margin-left: auto;
+//    margin-right: auto;
+}
+#mobilmeny .menu li a.active-trail{
+    color: $warning-color;
+}
+#mobilmeny .menu li a:hover{
+    color: $warning-color;
+}
+#mobilmeny .menu li ul{
+//    border-bottom: 1px #fff dotted;
+}
+
+//Level2
+#mobilmeny .menu li li a{
+    font-size: 0.7rem;   
+}
+#mobilmeny .menu li ul{
+    margin: 0;   
+}
+
+
