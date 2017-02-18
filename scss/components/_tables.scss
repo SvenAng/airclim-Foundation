@@ -21,7 +21,7 @@ $table-even-row-bg: $snow !default;
 
 // These control the table cell border style
 $table-border-style: solid !default;
-$table-border-size: 1px !default;
+$table-border-size: 0px !default;
 $table-border-color: $gainsboro !default;
 
 // These control the table head styles
@@ -65,7 +65,11 @@ $table-margin-bottom: rem-calc(20) !default;
   margin-bottom: $table-margin-bottom;
   border: $table-border-style $table-border-size $table-border-color;
   table-layout: $table-layout;
-
+    
+    tbody{
+        border: none;
+    }
+    
   caption {
     background: $table-caption-bg;
     color: $table-caption-font-color;

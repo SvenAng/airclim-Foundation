@@ -28,6 +28,7 @@ base theme = zurb_foundation
 
 ; For CSS users, load the airclim.css file:
 stylesheets[all][] = css/airclim.css
+stylesheets[all][] = fonts/foundation-icons/foundation-icons.css
 
 ; Block loading of foundation.min.css from the base theme. This file should either
 ; not exist or be blank in your subtheme. See https://drupal.org/node/263967
@@ -37,11 +38,11 @@ stylesheets[all][] = css/normalize.css
 ; Foundation JavaScript.
 
 ; External libraries used by Foundation (minified). Add more via Gruntfile.js.
-scripts[] = js/libs.min.js
+; scripts[] = js/libs.min.js
 
 ; Foundation framework scripts (minified).
 ; Control specific components via Gruntfile.js.
-scripts[] = js/foundation.min.js
+; scripts[] = js/foundation.min.js
 
 ; Theme scripts (minified).
 ; Grunt will compress any custom theme scripts matching the _*.js naming convention
@@ -78,7 +79,10 @@ regions[footer_firstcolumn]  = Footer one
 regions[footer_secondcolumn] = Footer two
 regions[footer_thirdcolumn]  = Footer three
 regions[footer_fourthcolumn] = Footer four
-regions[footer]              = Footer
+regions[footer_1]              = Footer spalt 1
+regions[footer_2]              = Footer spalt 2
+regions[footer_3]              = Footer spalt 3
+regions[footer_bottom]         = Footer botten
 
 ; Various page elements output by the theme can be toggled on and off. The
 ; "features" control which of these check boxes display on the

@@ -18,13 +18,13 @@
             <div class="column small-9 medium-7">
                 <!-- Title, slogan and menu -->
                 <?php if ($alt_header): ?>
-                <section class="row <?php print $alt_header_classes; ?>">
+                <section class="<?php print $alt_header_classes; ?>">
                     <?php if ($linked_logo): print $linked_logo; endif; ?>
                 </section>
                 <?php endif; ?>
                 <!-- End title, slogan and menu -->
             </div>    
-            <div class="column medium-5 show-for-medium-up">
+            <div class="column medium-5 show-for-medium-up top">
                 <nav class="top-meny">
                     <?php print render($page['top_meny']); ?>
                 </nav>
@@ -36,16 +36,6 @@
             
             <div class="m-btn column small-3 show-for-small-only">
                 <a id="nav-toggle" href="#"><span></span></a>
-<!--            
-                <a href="#" class="mobile-nav-trigger">
-                    <span class="line-wrapper">
-                        <span class="line"></span>
-                        <span class="line"></span>
-                        <span class="line"></span>
-                        
-                    </span>
-                </a>
--->
             </div>
             
         </div>
@@ -53,6 +43,7 @@
         <section class="l-header-region show-for-medium-up">
             <div class="header-region-inner row">
                 <div class="columns">
+                    <div class="home"><a href="/"><i class="fi-home"></i></a></div>
                     <?php print render($page['header']); ?>
                 </div>
             </div>
@@ -66,7 +57,7 @@
 
     <?php if (!empty($page['featured'])): ?>
     <!--.l-featured -->
-    <section class="l-featured row">
+    <section class="l-featured row small-collapse">
         <div class="columns">
             <?php print render($page['featured']); ?>
         </div>
@@ -106,8 +97,11 @@
 
             <a id="main-content"></a>
 
-            <?php if ($breadcrumb): print $breadcrumb; endif; ?>
-
+            <?php if ($breadcrumb): ?>
+                <div class='breadcrumb'>
+                    <?php print $breadcrumb; ?>
+                </div>
+            <?php endif; ?>
             <?php if ($title): ?>
             <?php print render($title_prefix); ?>
             <h1 id="page-title" class="title"><?php print $title; ?></h1>
@@ -187,21 +181,42 @@
     <?php endif; ?>
 
     <!--.l-footer -->
-    <footer class="l-footer panel row" role="contentinfo">
-        <?php if (!empty($page['footer'])): ?>
-        <div class="footer columns">
-            <?php print render($page['footer']); ?>
+    <footer class="l-footer" role="contentinfo">
+        <div class="footer-top-background">
+            <div class="footer-top-wrapper row">
+                <?php if (!empty($page['footer_1'])): ?>
+                <div class="footer-first medium-4 small-12 columns">
+                    <?php print render($page['footer_1']); ?>
+                </div>
+                <?php endif; ?>
+                <?php if (!empty($page['footer_2'])): ?>
+                <div class="footer-second medium-4 small-12 columns">
+                    <?php print render($page['footer_2']); ?>
+                </div>
+                <?php endif; ?>
+                <?php if (!empty($page['footer_3'])): ?>
+                <div class="footer-third medium-4 v columns">
+                    <?php print render($page['footer_3']); ?>
+                </div>
+                <?php endif; ?>
+            </div>
         </div>
+        
+        <?php if (!empty($page['footer_bottom'])): ?>
+            <div class="footer-top-background">
+                <div class="footer-top-wrapper row">
+                    <div class="footer-bottom-wrapper columns small-12">
+                        <?php print render($page['footer_bottom']); ?>
+                    </div>
+                </div>
+            </div>
         <?php endif; ?>
 
-        <?php if ($site_name) : ?>
-        <div class="copyright columns">
-            &copy; <?php print date('Y') . ' ' . $site_name . ' ' . t('All rights reserved.'); ?>
-        </div>
-        <?php endif; ?>
     </footer>
     <!--/.l-footer -->
-
+    <a href="#0" class="scroll-top" style="display: inline;">
+        <i class="fi-arrow-up"></i>
+    </a>
     <?php if ($messages && $zurb_foundation_messages_modal): print $messages; endif; ?>
 </div>
 <!--/.page -->

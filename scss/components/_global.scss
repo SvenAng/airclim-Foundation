@@ -239,7 +239,7 @@ $tuatara       : #444444 !default;
 $oil           : #333333 !default;
 $jet           : #222222 !default;
 $black         : #000000 !default;
-$headingcolor  : #414141 !default;
+$headingcolor  : #555555 !default;
 // We use these as default colors throughout
 $primary-color: #008CBA !default;   // bondi-blue
 $secondary-color: #e7e7e7 !default; // white-lilac
@@ -249,18 +249,24 @@ $warning-color: #fea100 !default;   // carrot
 $info-color: #a0d3e8 !default;      // cornflower
 $topnavigation-border: #0077a0  !default; // 
 
+// google fonter
+//@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
 // We use these to define default font stacks
-$font-family-sans-serif: Arial, "Helvetica Neue", Helvetica, Roboto, sans-serif !default;
+//$font-family-sans-serif: 'PT Sans', sans-serif;
+$font-family-sans-serif: 'Open Sans', sans-serif;
+//$font-family-sans-serif: Arial, "Helvetica Neue", Helvetica, Roboto, sans-serif !default;
 $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif !default;
 $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace !default;
 
 // We use these to define default font weights
-$font-weight-normal: normal !default;
-$font-weight-bold: bold !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
 
 // We use these to control various global styles
 $body-bg: #fff !default;
-$body-font-color: #222 !default;
+$body-font-color: $tuatara !default;
 $body-font-family: $font-family-sans-serif !default;
 $body-font-weight: $font-weight-normal !default;
 $body-font-style: normal !default;
