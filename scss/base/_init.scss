@@ -377,7 +377,9 @@ $mobilmeny-li-margin-V-2: 0.6rem;
 #mobilmeny a{
 //    float: left;
 }
-
+h1,h2,h3,h4,h5,h6{
+    text-shadow: 0 1px 1px #d9d9d9;
+}
 
 //Flexslider
 
@@ -528,4 +530,40 @@ span.tag-metadata{
 }
 span.tag-metadata:hover{
     background: $oil;
+}
+
+
+//========= Acid News
+
+//Högerspalt med teasers\ 
+
+.right-spalt-teasers{
+    article{
+        padding: $column-gutter/2;  
+        background-color: $white-smoke; 
+        margin-bottom: $column-gutter/2;
+    }
+    article:hover{
+        background-color: $smoke;   
+    }
+    p{
+        color: $tuatara;
+        margin-bottom: 0;
+    }
+    h3{
+        font-size: 1.3rem;
+        color: $primary-color;
+    }
+} 
+.readmore {
+    margin-top: 0.5rem;
+    span{
+        padding: 0.2rem 0.5rem;
+        color: $jumbo;
+        background-color: $gainsboro;
+        font-size: 0.75rem;
+        :hover{
+            background-color: $jumbo;
+        }
+    }
 }

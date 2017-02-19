@@ -6489,44 +6489,49 @@ aside .menu li a:hover {
   line-height: 0.8rem;
 }
 
-/* line 384, ../scss/base/_init.scss */
+/* line 380, ../scss/base/_init.scss */
+h1, h2, h3, h4, h5, h6 {
+  text-shadow: 0 1px 1px #d9d9d9;
+}
+
+/* line 386, ../scss/base/_init.scss */
 .flexslider {
   background: none;
   border: 0;
   margin: 0 !important;
 }
 
-/* line 389, ../scss/base/_init.scss */
+/* line 391, ../scss/base/_init.scss */
 .flexslider p {
   margin: 0;
 }
 
-/* line 393, ../scss/base/_init.scss */
+/* line 395, ../scss/base/_init.scss */
 .flex-direction-nav a {
   overflow: visible;
   margin: -40px 0 0;
 }
 
-/* line 397, ../scss/base/_init.scss */
+/* line 399, ../scss/base/_init.scss */
 .flex-direction-nav a.flex-next::before {
   font-family: "foundation-icons";
   content: "\f10b";
   font-size: 50px;
 }
 
-/* line 403, ../scss/base/_init.scss */
+/* line 405, ../scss/base/_init.scss */
 a.flex-prev, a.flex-next {
   font-size: 1px !important;
 }
 
-/* line 407, ../scss/base/_init.scss */
+/* line 409, ../scss/base/_init.scss */
 .flex-direction-nav a::before {
   font-family: "foundation-icons";
   content: "";
   font-size: 50px;
 }
 
-/* line 413, ../scss/base/_init.scss */
+/* line 415, ../scss/base/_init.scss */
 .scroll-top {
   background-color: #008CBA;
   border-radius: 4px;
@@ -6539,19 +6544,19 @@ a.flex-prev, a.flex-next {
   width: 40px;
 }
 
-/* line 425, ../scss/base/_init.scss */
+/* line 427, ../scss/base/_init.scss */
 .fi-arrow-up::before {
   content: "";
 }
 
-/* line 428, ../scss/base/_init.scss */
+/* line 430, ../scss/base/_init.scss */
 .scroll-top i {
   color: #ffffff;
   font-size: 1.7rem;
   padding: 0;
 }
 
-/* line 434, ../scss/base/_init.scss */
+/* line 436, ../scss/base/_init.scss */
 .home {
   float: left;
   padding-left: 0;
@@ -6559,109 +6564,146 @@ a.flex-prev, a.flex-next {
   cursor: pointer;
   padding-top: 0.3rem;
 }
-/* line 441, ../scss/base/_init.scss */
+/* line 443, ../scss/base/_init.scss */
 .home i {
   font-size: 1.1rem;
 }
-/* line 444, ../scss/base/_init.scss */
+/* line 446, ../scss/base/_init.scss */
 .home a {
   line-height: 0;
 }
-/* line 446, ../scss/base/_init.scss */
+/* line 448, ../scss/base/_init.scss */
 .home a i {
   color: #ffffff;
   line-height: 0;
 }
 
-/* line 454, ../scss/base/_init.scss */
+/* line 456, ../scss/base/_init.scss */
 .footer-top-background {
   background: #333333;
 }
 
-/* line 457, ../scss/base/_init.scss */
+/* line 459, ../scss/base/_init.scss */
 .footer-bottom-background {
   background: #000000;
 }
 
-/* line 460, ../scss/base/_init.scss */
+/* line 462, ../scss/base/_init.scss */
 .footer-top-wrapper {
   color: #DDDDDD;
   padding-top: 1rem;
 }
-/* line 462, ../scss/base/_init.scss */
+/* line 464, ../scss/base/_init.scss */
 .footer-top-wrapper a {
   color: white;
   text-decoration: underline;
 }
-/* line 466, ../scss/base/_init.scss */
+/* line 468, ../scss/base/_init.scss */
 .footer-top-wrapper a:hover {
   color: #fea100;
 }
-/* line 471, ../scss/base/_init.scss */
+/* line 473, ../scss/base/_init.scss */
 .footer-top-wrapper .menu li {
   list-style: none;
   border-bottom: dotted 1px #666666;
 }
-/* line 475, ../scss/base/_init.scss */
+/* line 477, ../scss/base/_init.scss */
 .footer-top-wrapper .menu li a {
   text-decoration: none;
   line-height: 2.2rem;
   padding-left: 1rem;
   color: #DDDDDD;
 }
-/* line 481, ../scss/base/_init.scss */
+/* line 483, ../scss/base/_init.scss */
 .footer-top-wrapper .menu li a:hover {
   color: #fea100;
 }
-/* line 484, ../scss/base/_init.scss */
+/* line 486, ../scss/base/_init.scss */
 .footer-top-wrapper .menu li.last {
   border-bottom: none;
 }
 
-/* line 489, ../scss/base/_init.scss */
+/* line 491, ../scss/base/_init.scss */
 .footer-bottom-wrapper {
   color: #AAAAAA;
 }
-/* line 491, ../scss/base/_init.scss */
+/* line 493, ../scss/base/_init.scss */
 .footer-bottom-wrapper p {
   font-size: 0.85rem;
 }
-/* line 495, ../scss/base/_init.scss */
+/* line 497, ../scss/base/_init.scss */
 .footer-bottom-wrapper a {
   text-decoration: underline;
   color: #DDDDDD;
 }
-/* line 499, ../scss/base/_init.scss */
+/* line 501, ../scss/base/_init.scss */
 .footer-bottom-wrapper a:hover {
   color: #fea100;
 }
 
-/* line 513, ../scss/base/_init.scss */
+/* line 515, ../scss/base/_init.scss */
 .extra-above-title {
   margin-top: 0.5rem;
 }
 
-/* line 516, ../scss/base/_init.scss */
+/* line 518, ../scss/base/_init.scss */
 .tag-metadata {
   margin-bottom: 1rem;
 }
 
-/* line 519, ../scss/base/_init.scss */
+/* line 521, ../scss/base/_init.scss */
 span.tag-metadata {
   background: #fea100;
   padding: 0.1rem 0.4rem 0.2rem 0.4rem;
   margin-right: 0.3rem;
   border-radius: 0.1rem;
 }
-/* line 523, ../scss/base/_init.scss */
+/* line 525, ../scss/base/_init.scss */
 span.tag-metadata a {
   color: #FFFFFF;
   font-size: 0.85rem;
 }
 
-/* line 529, ../scss/base/_init.scss */
+/* line 531, ../scss/base/_init.scss */
 span.tag-metadata:hover {
   background: #333333;
+}
+
+/* line 541, ../scss/base/_init.scss */
+.right-spalt-teasers article {
+  padding: 0.9375rem;
+  background-color: #F5F5F5;
+  margin-bottom: 0.9375rem;
+}
+/* line 546, ../scss/base/_init.scss */
+.right-spalt-teasers article:hover {
+  background-color: #EEEEEE;
+}
+/* line 549, ../scss/base/_init.scss */
+.right-spalt-teasers p {
+  color: #444444;
+  margin-bottom: 0;
+}
+/* line 553, ../scss/base/_init.scss */
+.right-spalt-teasers h3 {
+  font-size: 1.3rem;
+  color: #008CBA;
+}
+
+/* line 558, ../scss/base/_init.scss */
+.readmore {
+  margin-top: 0.5rem;
+}
+/* line 560, ../scss/base/_init.scss */
+.readmore span {
+  padding: 0.2rem 0.5rem;
+  color: #888888;
+  background-color: #DDDDDD;
+  font-size: 0.75rem;
+}
+/* line 565, ../scss/base/_init.scss */
+.readmore span :hover {
+  background-color: #888888;
 }
 
 /* line 4, ../scss/base/_drupal.scss */
