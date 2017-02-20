@@ -75,20 +75,23 @@
 }
 
 
-.breadcrumb .item-list{
-    ul{
-        margin-bottom: 0;
-    }
-    
-    li{
-        display: inline-block;
-        margin: 0;
-        padding: 0;
-        font-size: 0.75rem;
-        color: $primary-color;
-        a{
+.breadcrumb {
+//    margin-bottom: 0.4rem;
+    .item-list{
+        ul{
+            margin-bottom: 0;
+        }
+
+        li{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
             font-size: 0.75rem;
-            padding-right: 0.2rem;
+            color: $primary-color;
+            a{
+                font-size: 0.75rem;
+                padding-right: 0.2rem;
+            }
         }
     }
 }
@@ -109,6 +112,9 @@ address{
 }
 .l-main{
     padding-top: 1rem;
+    .main.columns{
+        padding-right: 0;
+    }
 }
 
 .l-header{
@@ -515,21 +521,24 @@ a.flex-prev, a.flex-next{
 .extra-above-title{
     margin-top: 0.5rem;
 }
-.tag-metadata{
-    margin-bottom: 1rem;
+.tag-metadata.wrapper{
+    margin-bottom: $column-gutter/2;
 }
 span.tag-metadata{
-    background: $warning-color;
-    padding: 0.1rem 0.4rem 0.2rem 0.4rem;
+    
     margin-right: 0.3rem;
+    
     a{
         color: $white; 
-        font-size: 0.85rem;
+        font-size: 0.75rem;
+        line-height: 0.75rem;
+        padding: 0.1rem 0.5rem;
+        background: $warning-color;
+        border-radius: 0.4rem;
     }
-    border-radius: 0.1rem;
-}
-span.tag-metadata:hover{
-    background: $oil;
+    a:hover{
+        background: $oil;
+    }
 }
 
 
@@ -550,9 +559,10 @@ span.tag-metadata:hover{
         color: $tuatara;
         margin-bottom: 0;
     }
-    h3{
+    h4{
         font-size: 1.3rem;
         color: $primary-color;
+        margin-top: 0;
     }
 } 
 .readmore {
@@ -562,8 +572,92 @@ span.tag-metadata:hover{
         color: $jumbo;
         background-color: $gainsboro;
         font-size: 0.75rem;
-        :hover{
+        a:hover{
             background-color: $jumbo;
         }
     }
+}
+.node-ing-field{
+    margin-bottom: $column-gutter/2;
+    margin-top: $column-gutter/2;
+}
+
+
+//=============== Main spalt
+.main-spalt-teasers{
+    article{
+        padding-top: $column-gutter/2;
+        padding-bottom: $column-gutter/2;  
+//        background-color: $white-smoke; 
+//        margin-bottom: $column-gutter/4;
+//        margin-bottom: $column-gutter/4;
+//        border-bottom: solid 1px $smoke;
+        border-top: solid 1px $smoke;
+        border-bottom: solid 1px white;
+    }
+    article:hover{
+        background-color: $white-smoke;
+//        border-top: dotted 1px $warning-color;
+//        border-bottom: dotted 1px $warning-color;
+    }
+    a.row{
+        margin: 0;    
+    }
+    p{
+        color: $tuatara;
+        margin-bottom: 0;
+    }
+    h3{
+        font-size: 1.6rem;
+        color: $primary-color;
+    }
+    .small-12{
+        img{
+            margin-bottom: 4px;
+        }
+    }
+    .teaser-thmb-left{
+        // kan ats bort sedan om man vill grå bakgrund
+//        padding: 0;
+    }
+    .teaser-txt-left{
+        // kan ats bort sedan om man vill grå bakgrund
+//        padding-right: 0;
+    }
+    .teaser-thmb-right{
+        // kan ats bort sedan om man vill grå bakgrund
+//        padding: 0;
+    }
+}
+
+// =============== sociala links
+.a2a_kit{
+    margin-bottom: $column-gutter/2;
+}
+
+//=================== print page
+
+.print_html, .print_mail, .print_pdf, .print_epub {
+    margin-left: 0;
+}
+
+.print_html{
+    a.print-page{
+        padding: 0.2rem 0.5rem;
+        color: $jumbo;
+        background-color: $gainsboro;
+        font-size: 0.75rem;
+        
+    }
+    a:hover{
+        background-color: $jumbo;
+        color: $white;
+    }
+    
+}
+.block-print-ui-print-links{
+    margin-bottom: $column-gutter/2;
+}
+.vinjett-acidnews p{
+    margin-bottom: $column-gutter/4;
 }

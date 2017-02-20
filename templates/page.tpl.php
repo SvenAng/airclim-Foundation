@@ -96,7 +96,11 @@
             <?php endif; ?>
 
             <a id="main-content"></a>
-
+            <?php if (!empty($page['vinjett_acidnews'])): ?>
+            <div class="vinjett-acidnews">
+                <?php print render($page['vinjett_acidnews']); ?>
+            </div>
+            <?php endif; ?>
             <?php if ($breadcrumb): ?>
                 <div class='breadcrumb'>
                     <?php print $breadcrumb; ?>

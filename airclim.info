@@ -67,6 +67,7 @@ regions[header]              = Header
 regions[top_meny]           = Top meny
 regions[top_search]           = Top Sök block
 regions[help]                = Help
+regions[vinjett_acidnews]    = Vinjett Acidnews
 regions[highlighted]         = Highlighted
 regions[featured]            = Featured
 regions[content]             = Content
