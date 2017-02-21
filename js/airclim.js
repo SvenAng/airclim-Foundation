@@ -21,16 +21,17 @@ jQuery(document).ready(function () {
         jQuery(this).next('.mobilmeny-submenu').slideToggle('fast');
         var $thx = jQuery(this);
         $thx.text($thx.text() == '+' ? '-' : '+');
-        //alert("ssssss");
+        
     });
     
     jQuery(".scroll-top").click(function() {
         jQuery("html, body").animate({scrollTop: 0 }, "slow");
         return false;
-        //alert("ssssss");
+        
     });
     var offset = 220;
     var duration = 500;
+    
     jQuery('.scroll-top').hide();
     jQuery(window).scroll(function() {
         if (jQuery(this).scrollTop() > offset) {
@@ -39,4 +40,22 @@ jQuery(document).ready(function () {
             jQuery('.scroll-top').fadeOut(duration);
         }
     });
+    
+//    Acid news Logik för main AN page. Uppmärkning sitter acidnews-1col.tpl.php\
+    jQuery('.close-an-main-article-button').hide();
+    
+    jQuery(".open-an-main-article-button").click(function() {
+        jQuery('.open-an-main-article').slideDown("slow");
+        jQuery('.close-an-main-article-button').show();
+        jQuery('.open-an-main-article-button').hide();
+
+    });
+    
+    jQuery(".close-an-main-article-button").click(function() {
+        jQuery('.open-an-main-article').slideUp("fast");
+        jQuery('.close-an-main-article-button').hide();
+        jQuery('.open-an-main-article-button').show();
+    });
+    
+    
 });

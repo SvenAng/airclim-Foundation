@@ -122,7 +122,7 @@
                 <?php print render($action_links); ?>
             </ul>
             <?php endif; ?>
-
+            
             <?php print render($page['content']); ?>
         </div>
         <!--/.l-main region -->

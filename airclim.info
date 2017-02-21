@@ -61,7 +61,6 @@ scripts[] = js/airclim.js
 ; You'll use this variable in page.tpl.php:
 ;   <?php print render($page['header']); ?>
 
-
 regions[mobilmeny]           = Mobil meny
 regions[header]              = Header
 regions[top_meny]           = Top meny

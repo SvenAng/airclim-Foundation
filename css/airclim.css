@@ -6780,6 +6780,40 @@ span.tag-metadata a:hover {
   margin-bottom: 0.46875rem;
 }
 
+/* line 667, ../scss/base/_init.scss */
+.open-an-main-article {
+  display: none;
+}
+
+/* line 670, ../scss/base/_init.scss */
+.close-an-main-article-button, .open-an-main-article-button {
+  margin-top: 0.9375rem;
+  margin-bottom: 1.10294rem;
+  cursor: pointer;
+}
+
+/* line 675, ../scss/base/_init.scss */
+.main h2.block-title {
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  margin-bottom: 2px;
+  margin-left: 0.9375rem;
+  margin-top: 1.875rem;
+}
+
+/* line 688, ../scss/base/_init.scss */
+.publication-main article {
+  padding: 0.9375rem;
+  background-color: #F5F5F5;
+  margin-bottom: 0.46875rem;
+  font-size: 0.9rem;
+}
+/* line 696, ../scss/base/_init.scss */
+.publication-main .publ-text-author {
+  font-style: oblique;
+}
+
 /* line 4, ../scss/base/_drupal.scss */
 .admin-menu .fixed {
   top: 1.8125rem;
