@@ -21,6 +21,7 @@
 //    opacity: 1;
 //    pointer-events: all;
 //    z-index: 1000;
+
 //}
 
 //new
@@ -542,7 +543,7 @@ span.tag-metadata{
 }
 
 
-//========= Acid News
+//========= Acid News och DS Teaser
 
 //Högerspalt med teasers\ 
 
@@ -564,6 +565,13 @@ span.tag-metadata{
         color: $primary-color;
         margin-top: 0;
     }
+    .image{
+       margin-bottom: $column-gutter/2; 
+    }
+    .above-text{
+        color: $body-font-color;
+        font-size: 0.8rem;
+    }
 } 
 .readmore {
     margin-top: 0.5rem;
@@ -583,22 +591,28 @@ span.tag-metadata{
 }
 
 
-//=============== Main spalt
+//=============== Main spalt och DS teaser
 .main-spalt-teasers{
     article{
         padding-top: $column-gutter/2;
         padding-bottom: $column-gutter/2;  
-//        background-color: $white-smoke; 
-//        margin-bottom: $column-gutter/4;
-//        margin-bottom: $column-gutter/4;
-//        border-bottom: solid 1px $smoke;
         border-top: solid 1px $smoke;
-        border-bottom: solid 1px white;
+        border-bottom: solid 1px white;       
     }
     article:hover{
         background-color: $white-smoke;
 //        border-top: dotted 1px $warning-color;
 //        border-bottom: dotted 1px $warning-color;
+    }
+    .zf-1col{
+        cursor: pointer;
+    }
+    .taxon{
+        padding-left: $column-gutter/2;
+        padding-right: $column-gutter/2;
+    }
+    .last{
+        margin-bottom: $column-gutter;
     }
     a.row{
         margin: 0;    
@@ -627,6 +641,83 @@ span.tag-metadata{
     .teaser-thmb-right{
         // kan ats bort sedan om man vill grå bakgrund
 //        padding: 0;
+    }
+    .teaser-container{
+        padding-left: $column-gutter/2;
+        padding-right: $column-gutter/2;
+    }
+    .teaser-image{
+        margin-bottom: $column-gutter/2;
+    }
+    .node-typ, .date, .publ-above{
+        font-size: 0.8rem;
+        color: $body-font-color;
+    }
+    ul{
+        margin: 0 0 $column-gutter/3 0;
+        padding: 0;
+        li{
+            display: inline-block;
+            margin-right: 0.3rem;
+            a{
+                font-size: 0.75rem;
+                line-height: 0.75rem;
+                padding: 0.1rem 0.5rem;
+                border-radius: 0.4rem;
+            }
+        }
+    }
+    .item-list{
+        ul{
+            li{
+                margin: 0;
+                a{
+                    background: $silver;
+                    color: $body-font-color;
+                }
+            }
+        }
+    }
+    .body{
+        margin-bottom: $column-gutter/2;
+    }
+    .tags{
+        margin-bottom: $column-gutter/2;
+        ul{
+            li{
+                a{
+                    background: $warning-color;
+                    color: $white; 
+                }
+            }
+        }  
+    }
+    .author{
+        margin-bottom: 0.3rem;
+        ul{
+            li{
+                
+                a{
+                    background: $silver;  
+                }
+            }
+        }
+    }
+    .download{
+        margin-bottom: $column-gutter/2;
+        .file{
+            border: 1px $silver solid;
+            border-radius: 0.7rem;
+            padding: 0.1rem 0.5rem 0.3rem 0.5rem;  
+
+        }
+        .file:hover{
+            background: $silver;
+        }
+
+        a{
+            font-size: 0.8rem;
+        }
     }
 }
 
@@ -697,5 +788,66 @@ span.tag-metadata{
         font-style: oblique;
     }
    
+    
+}
+
+// ============================= Full node
+.bildtext{
+    font-style: oblique;
+    font-size: 80%;
+    margin-bottom: $column-gutter/2;
+}
+.node-image{
+    margin-bottom: $column-gutter/2;
+}
+
+.node-container{
+    h1{}
+    .typ{}
+    .author{
+        ul{
+            margin-bottom: $column-gutter/2;
+            margin-left: 0;
+            padding: 0;
+            
+            li{
+                display: inline-block;
+                margin-right: 0.3rem;
+                
+                a{
+                    background: $silver;
+                    color: $body-font-color;
+                    font-size: 0.75rem;
+                    line-height: 0.75rem;
+                    padding: 0.1rem 0.5rem;
+                    border-radius: 0.4rem;
+                }
+            }
+           
+            
+        }
+    }
+    .body{
+        margin-bottom: $column-gutter/2;
+    }
+    .above{
+        
+    }
+    .download{
+        margin-bottom: $column-gutter/2;
+        .file{
+            border: 1px $silver solid;
+            border-radius: 0.7rem;
+            padding: 0.1rem 0.5rem 0.3rem 0.5rem;  
+            
+        }
+        .file:hover{
+            background: $silver;
+        }
+        
+        a{
+            font-size: 0.8rem;
+        }
+    }
     
 }

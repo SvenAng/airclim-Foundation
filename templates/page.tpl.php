@@ -108,6 +108,7 @@
             <?php endif; ?>
             <?php if ($title): ?>
             <?php print render($title_prefix); ?>
+<!--            <div>Tag:</div>-->
             <h1 id="page-title" class="title"><?php print $title; ?></h1>
             <?php print render($title_suffix); ?>
             <?php endif; ?>
