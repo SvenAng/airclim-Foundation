@@ -1,6 +1,29 @@
 //@import "../../zurb_foundation/scss/foundation/functions";
 
 //Skrivet av Sven Ängermark Monoclick Solutiosn 2017 sven@monoclick.se
+.front-right{
+    border-bottom: 1px $silver solid;
+    margin-bottom: $column-gutter/4;
+        p{
+            margin-bottom: 0;
+        }
+}
+.node-ing-field{
+    
+    blockquote{
+        padding: 0;
+        border: 0;  
+        .image-field-caption,
+        .image-field-caption p{
+            
+            color: darkgray;
+        }
+        p{
+            font-size: 0.75rem !important;
+        }
+    }
+    
+}
 
 //Mobil navigering
 
@@ -170,7 +193,18 @@ input[type="text"]{
     padding: 3px;
 }
 
-
+button, .button{
+    padding: 0.35rem 1.1rem; 
+    font-size: 0.8rem;
+}
+select{
+    height: 1.8rem;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.views-exposed-form .views-exposed-widget .form-submit {
+//    margin-top:0;
+}
 //Top grejer
 .header-inner{
     padding-bottom: 1rem;
@@ -545,6 +579,24 @@ span.tag-metadata{
 
 //========= Acid News och DS Teaser
 
+//Topp blocket
+.an-top-meta{
+    .title{
+        a{
+            color: black;
+            font-size: 0.8rem;
+        }    
+    }
+    a{
+        color: black;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        img{
+            margin-right: 5px;
+        }
+    }
+}
+
 //Högerspalt med teasers\ 
 
 .right-spalt-teasers{
@@ -565,7 +617,7 @@ span.tag-metadata{
         color: $primary-color;
         margin-top: 0;
     }
-    .image{
+    .node-img-field{
        margin-bottom: $column-gutter/2; 
     }
     .above-text{
@@ -590,6 +642,41 @@ span.tag-metadata{
     margin-top: $column-gutter/2;
 }
 
+//AN notisspalt
+
+.bottom-spalt-teasers{
+    .views-column{
+        .inner{
+            padding: $column-gutter/2;  
+            background-color: $white-smoke; 
+            margin-bottom: $column-gutter/2;    
+        }
+        .inner:hover{
+            background-color: $smoke;
+        }
+         
+    }
+    .columns{
+        padding-left: $column-gutter/4;
+        padding-right: $column-gutter/4;
+    }
+    .views-column-first{
+        padding-left: $column-gutter/2;
+    }
+    .views-column-last{
+        padding-right: $column-gutter/2;
+    }
+    
+    p{
+        color: $tuatara;
+        margin-bottom: 0;
+    }
+    h4{
+        font-size: 1.3rem;
+        color: $primary-color;
+        margin-top: 0;
+    }
+}
 
 //=============== Main spalt och DS teaser
 .main-spalt-teasers{
@@ -851,3 +938,108 @@ span.tag-metadata{
     }
     
 }
+
+//======================== Acid news arkivet ======================= 
+
+.acid-news-archive{
+    h3{
+        border-bottom: 1px $silver solid;
+        margin-right: $column-gutter/2;
+        margin-bottom: $column-gutter/2;
+    }
+    article{
+        color:$black;
+        font-size: 0.85rem;
+    }
+    .download-link{
+        margin-top: $column-gutter/4;
+        margin-bottom: $column-gutter;
+    }
+    
+    .item-list-li{
+        margin:0;
+        padding:0;
+        li{
+            @media only screen and (min-width: 64.063em){ 
+                width: 18%;
+            }
+            @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+                width: 30%;
+            }
+            @media only screen and (max-width: 40em) { 
+                width: 100%;
+            }
+            list-style: none;
+            padding: 0;
+            margin: 0 !important;
+            display: inline-block;
+            vertical-align: top;
+            padding-right: $column-gutter/4; 
+        }
+
+        .view-list-row{
+            -webkit-column-break-inside: avoid;
+            page-break-inside: avoid;
+            break-inside: avoid;
+            display: inline-block;
+        }
+    }
+}
+
+// ===================================== Horisontal =============================
+.horisontal{
+    .inner{
+//        background: $white;
+        padding: $column-gutter/2;
+        .block-title{
+            font-size: 1rem;
+        }
+    }
+    .views-responsive-grid{
+        .column{
+            padding: 0;
+//            border-right: 1px #333 solid;
+            min-height: 380px;
+            padding-left: $column-gutter/4;
+            padding-right: $column-gutter/4;
+        }
+        .views-column-first {
+            padding-left: $column-gutter/2;
+        }
+        .views-column-last {
+            padding-right: $column-gutter/2;
+        }
+        a{
+            .inner-content{
+                padding: $column-gutter/2;
+//                background: red;
+//                background: $silver;
+            }
+            
+        }
+        
+        
+    }
+}
+.horisontal-first{
+    .inner{
+        padding-top: $column-gutter;
+        background: rgba(255, 255, 255, 1);
+        
+    }
+    
+}
+.horisontal-second{
+     
+    .inner{
+        padding-top: $column-gutter;
+        background: rgba(255, 255, 255, 0.7);
+        img{
+            border: 1px $gainsboro solid;
+        }
+    }
+}
+.horisontal-third{
+    background: rgba(160, 211, 232, 0.7);
+}
+

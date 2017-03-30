@@ -96,16 +96,19 @@
             <?php endif; ?>
 
             <a id="main-content"></a>
-            <?php if (!empty($page['vinjett_acidnews'])): ?>
-            <div class="vinjett-acidnews">
-                <?php print render($page['vinjett_acidnews']); ?>
-            </div>
-            <?php endif; ?>
+            
             <?php if ($breadcrumb): ?>
                 <div class='breadcrumb'>
                     <?php print $breadcrumb; ?>
                 </div>
             <?php endif; ?>
+            
+            <?php if (!empty($page['vinjett_acidnews'])): ?>
+            <div class="vinjett-acidnews">
+                <?php print render($page['vinjett_acidnews']); ?>
+            </div>
+            <?php endif; ?>
+            
             <?php if ($title): ?>
             <?php print render($title_prefix); ?>
 <!--            <div>Tag:</div>-->
@@ -141,7 +144,38 @@
         <?php endif; ?>
     </main>
     <!--/.l-main -->
-
+    
+    <!--    Horisontella ytor-->
+    
+    
+        
+        <?php if (!empty($page['hor_first'])): ?>
+            <div class="horisontal-first horisontal">
+                <div class="inner row">
+                    <?php print render($page['hor_first']); ?>
+                </div>    
+            </div>
+        <?php endif; ?>
+    
+        <?php if (!empty($page['hor_second'])): ?>
+            <div class="horisontal-second horisontal">
+                <div class="inner row">
+                    <?php print render($page['hor_second']); ?>
+                </div>
+            </div>
+        <?php endif; ?>
+    
+        <?php if (!empty($page['hor_third'])): ?>
+            <div class="horisontal-third horisontal">
+                <div class="inner row">
+                    <?php print render($page['hor_third']); ?>
+                </div>
+            </div>
+        <?php endif; ?>
+    
+    
+    <!--    -->
+    
     <?php if (!empty($page['triptych_first']) || !empty($page['triptych_middle']) || !empty($page['triptych_last'])): ?>
     <!--.triptych-->
     <section class="l-triptych row">
