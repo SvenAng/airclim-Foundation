@@ -10,23 +10,26 @@
   <?php print render($title_suffix['contextual_links']); ?>
   <?php endif; ?>
 
-  <div class="columns small-12 <?php print $zf_wrapper_classes; ?>">
+  <div class="columns small-12 ">
     <<?php print $ds_content_wrapper ?> class="group-content<?php print $ds_content_classes; ?>">
         
         <?php //$kontroll = trim(strip_tags(render($content['field_issue']))); ?>
-    
+        <div><img src="/sites/all/themes/airclim/images/Acidnews.gif"></div>
+        <div><?php print $ds_content_meta; ?></div>
         <?php print $ds_content_top; ?>
         
-        <?php //if ($kontroll == "Main Article"): ?>
-            <?php //print render($node->body[$node->language][0]['safe_summary']);  ?>
-<!--            <div class="open-an-main-article-button readmore"><span>Read more</span></div>-->
-            <?php //print $ds_content; ?>
-<!--            <div class="close-an-main-article-button readmore"><span>Hide main text</span></div>-->
-        <?php //else: ?>
-            <div class="normal"><?php print $ds_content; ?></div>
-        <?php //endif; ?>
         
-        
+        <div class="normal"><?php print $ds_content; ?></div>
+        <div class="a2a_kit a2a_default_style">
+            <a class="a2a_button_facebook"></a>
+            <a class="a2a_button_twitter"></a>
+            <a class="a2a_button_google_plus"></a>
+            <a class="a2a_dd" href="http://www.addtoany.com/share_save">
+
+            </a>
+        </div>
+
+        <script type="text/javascript" src="http://static.addtoany.com/menu/page.js"></script>
         <?php print $ds_content_bottom; ?>
         
     </<?php print $ds_content_wrapper ?>>

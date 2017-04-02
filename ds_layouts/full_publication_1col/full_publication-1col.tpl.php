@@ -32,6 +32,7 @@
             
             <div class="above"><?php print strip_tags(render($content['field_above']));  ?></div>
             <h1><?php print trim(strip_tags(render($content['title'])));?></h1>
+            <div class="date"><?php print trim(strip_tags(render($content['field_pdate'])));?></div>
             <div class="author"><?php print render($content['field_author_2']); ?></div>
             <div class="body"><?php print render($content['body']);  ?></div>
             <div class="download"><?php print render($content['field_pdf']);  ?></div>

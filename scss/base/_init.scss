@@ -1,5 +1,3 @@
-//@import "../../zurb_foundation/scss/foundation/functions";
-
 //Skrivet av Sven Ängermark Monoclick Solutiosn 2017 sven@monoclick.se
 .front-right{
     border-bottom: 1px $silver solid;
@@ -40,27 +38,17 @@
     z-index: 1000;
     display: none;
 }
-//#mobilmeny.open {
-//    opacity: 1;
-//    pointer-events: all;
-//    z-index: 1000;
 
-//}
 
 //new
 #nav-toggle { 
-//    position: absolute;  
-//    left: 50%; 
-//    top: 50%;
     margin-top: 1rem;
-//    margin-right: 2rem;
     display: block;
 }
 
 #nav-toggle { 
     cursor: pointer; 
     padding: 10px 35px 16px 0px; 
-//    margin-right: 1rem;
 }
 #nav-toggle span, 
 #nav-toggle span:before, 
@@ -73,7 +61,6 @@
     position: absolute;
     display: block;
     content: '';
-//    right: 1rem;
 }
 #nav-toggle span:before {
     top: -10px; 
@@ -100,7 +87,6 @@
 
 
 .breadcrumb {
-//    margin-bottom: 0.4rem;
     .item-list{
         ul{
             margin-bottom: 0;
@@ -222,9 +208,7 @@ select{
 .block-superfish-1 .sf-menu.sf-style-default{
     margin-bottom: 0;
 }
-.block-superfish-1 {
-//    background: #ffffff url("../images/top-menu-bakgrund.png") repeat-x scroll 0 0;
-}
+
 .block-superfish-1 .sf-menu.sf-style-default li, 
 .block-superfish-1 .sf-menu.sf-style-default.sf-navbar{
     background: none;
@@ -358,8 +342,6 @@ $mobilmeny-li-margin-V-2: 0.6rem;
 }
 #mobilmeny .menu li li{
     border-bottom: none;
-//    height: $mobilmeny-li-height-2;
-//    display: block;
     padding-top: $mobilmeny-li-margin-V-2;
     padding-bottom: $mobilmeny-li-margin-V-2;
 }
@@ -397,26 +379,15 @@ $mobilmeny-li-margin-V-2: 0.6rem;
 #mobilmeny .open-sub {
     color: #ffffff;
     font-size: 1.8rem;
-//    margin-right: 0.5rem;
-//    text-align: center;
-//    width: 30px;
 }
 #mobilmeny span {
     cursor: pointer;
     position: absolute;
     right: 2.2rem;
-//    z-index: 2;
-//    float:right;
-//    display: block;
-//    width: 100%;
-//    text-align: right;
     line-height: $mobilmeny-line-height-1;
 }
 #mobilmeny ul li ul li span{
     line-height: $mobilmeny-line-height-2;
-}
-#mobilmeny a{
-//    float: left;
 }
 h1,h2,h3,h4,h5,h6{
     text-shadow: 0 1px 1px #d9d9d9;
@@ -559,10 +530,13 @@ a.flex-prev, a.flex-next{
 .tag-metadata.wrapper{
     margin-bottom: $column-gutter/2;
 }
+.tag-metadata{
+    margin-bottom: $column-gutter/2;
+}
 span.tag-metadata{
-    
+    display: inline-block;
     margin-right: 0.3rem;
-    
+    margin-bottom: 0;
     a{
         color: $white; 
         font-size: 0.75rem;
@@ -574,6 +548,9 @@ span.tag-metadata{
     a:hover{
         background: $oil;
     }
+    
+
+
 }
 
 
@@ -688,8 +665,7 @@ span.tag-metadata{
     }
     article:hover{
         background-color: $white-smoke;
-//        border-top: dotted 1px $warning-color;
-//        border-bottom: dotted 1px $warning-color;
+
     }
     .zf-1col{
         cursor: pointer;
@@ -989,7 +965,6 @@ span.tag-metadata{
 // ===================================== Horisontal =============================
 .horisontal{
     .inner{
-//        background: $white;
         padding: $column-gutter/2;
         .block-title{
             font-size: 1rem;
@@ -998,8 +973,7 @@ span.tag-metadata{
     .views-responsive-grid{
         .column{
             padding: 0;
-//            border-right: 1px #333 solid;
-            min-height: 380px;
+//            min-height: 200px;
             padding-left: $column-gutter/4;
             padding-right: $column-gutter/4;
         }
@@ -1012,13 +986,8 @@ span.tag-metadata{
         a{
             .inner-content{
                 padding: $column-gutter/2;
-//                background: red;
-//                background: $silver;
             }
-            
-        }
-        
-        
+        }     
     }
 }
 .horisontal-first{
@@ -1043,3 +1012,7 @@ span.tag-metadata{
     background: rgba(160, 211, 232, 0.7);
 }
 
+//misc
+.field-name-print-page {
+    margin-bottom: $column-gutter;
+}
