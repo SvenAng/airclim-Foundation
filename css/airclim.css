@@ -7174,6 +7174,47 @@ span.tag-metadata a:hover {
   margin-bottom: 1.875rem;
 }
 
+/* line 1020, ../scss/base/_init.scss */
+#popup-question-redirect {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* line 1023, ../scss/base/_init.scss */
+.modal-dialog {
+  width: inherit;
+  max-width: 400px;
+  margin-top: 50px;
+}
+/* line 1027, ../scss/base/_init.scss */
+.modal-dialog .modal-content {
+  border-radius: 0;
+}
+/* line 1030, ../scss/base/_init.scss */
+.modal-dialog .modal-content .btn {
+  border-radius: 0;
+  margin: 10px 0;
+  display: block;
+}
+/* line 1035, ../scss/base/_init.scss */
+.modal-dialog .modal-content .button-yes {
+  background: #008CBA;
+  color: #FFFFFF;
+  border: none;
+}
+/* line 1040, ../scss/base/_init.scss */
+.modal-dialog .modal-content .modal-header {
+  background: #008CBA;
+  padding: 3px;
+}
+/* line 1043, ../scss/base/_init.scss */
+.modal-dialog .modal-content .modal-header h4 {
+  color: #FFFFFF;
+}
+/* line 1047, ../scss/base/_init.scss */
+.modal-dialog .modal-content .modal-footer {
+  text-align: left;
+}
+
 /* line 4, ../scss/base/_drupal.scss */
 .admin-menu .fixed {
   top: 1.8125rem;

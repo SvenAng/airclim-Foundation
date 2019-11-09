@@ -1016,3 +1016,36 @@ span.tag-metadata{
 .field-name-print-page {
     margin-bottom: $column-gutter;
 }
+//Popup rutan för undersökningen
+#popup-question-redirect{
+    background: rgba(0,0,0,0.5);
+}
+.modal-dialog{
+    width: inherit;
+    max-width: 400px;
+    margin-top: 50px;
+    .modal-content{
+    //    background: $gainsboro;
+        border-radius: 0;
+        .btn{
+            border-radius: 0;
+            margin: 10px 0;
+            display: block;
+        }
+        .button-yes{
+            background: $primary-color;
+            color: $white;
+            border: none;
+        }
+        .modal-header{
+            background: $primary-color;
+            padding: 3px;
+            h4{
+                color: $white;    
+            }
+        }
+        .modal-footer{
+            text-align: left;
+        }
+    }
+}
