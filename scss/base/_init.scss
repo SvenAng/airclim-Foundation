@@ -1016,7 +1016,44 @@ span.tag-metadata{
 .field-name-print-page {
     margin-bottom: $column-gutter;
 }
-//Popup rutan för undersökningen
+
+// popup anouncement modulen.
+#popup-announcement-wrap{
+    border-radius: 0;
+    border-top: 6px solid $primary-color;
+    #popup-announcement{
+        padding: 12px;
+        h1{
+            font-size: 2rem;
+            padding-top: 0;
+            margin-top: 0;
+        }
+        a{
+            border: 1px $primary-color solid;
+            padding: 5px 10px;
+            font-size: 0.85rem;
+        }
+        a:hover{
+            background: $primary-color;
+            color: white;
+            
+        }
+    }
+    #popup-announcement-close:before{
+        content: "Close "
+    }
+    #popup-announcement-close{
+        bottom: 8px;
+        right: 8px;
+        height: 26px;
+        width: 70px;
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+}
+
+
+//Popup rutan för undersökningen UTRANGERAD 21/11 -19
 #popup-question-redirect{
     background: rgba(0,0,0,0.5);
 }
