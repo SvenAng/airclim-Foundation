@@ -20,6 +20,7 @@
         
         
         <div class="normal"><?php print $ds_content; ?></div>
+<!--
         <div class="a2a_kit a2a_default_style">
             <a class="a2a_button_facebook"></a>
             <a class="a2a_button_twitter"></a>
@@ -28,8 +29,9 @@
 
             </a>
         </div>
+-->
 
-        <script type="text/javascript" src="http://static.addtoany.com/menu/page.js"></script>
+<!--        <script type="text/javascript" src="http://static.addtoany.com/menu/page.js"></script>-->
         <?php print $ds_content_bottom; ?>
         
     </<?php print $ds_content_wrapper ?>>
